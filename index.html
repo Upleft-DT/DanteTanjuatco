@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dante Tanjuatco's Website</title>
+    <meta charset="utf-8" />
+	<meta name="description" content="Dante Tanjuatco's Resume Website" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="Dante Tanjuatco" />
+    <link href="images/favicon.ico" rel="icon" />
+
+    <style>
+        h1 {
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a><b>Home</b></a>
+            <a><b>About</b></a>
+            <a><b>Work</b></a>
+            <a><b>Contact</b></a>
+        </nav>
+        <h1>Dante Tanjuatco</h1>
+        <p><em>Software Developer</em></p>
+        <nav>
+            <a>LinkedIn</a>
+            <a>Email</a>
+            <a>Github</a>
+            <a>Phone</a>
+        </nav>
+        <figure>
+            <img src="aesthetic.jpg" alt="Very aesthetic image">
+            <figcaption>Aesthetic photo taken by Dante Tanjuatco</figcaption>
+        </figure>
+    </header>
+    <hr/>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <aside>
+                <p><i>Here is who I am.</i></p>
+            </aside>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="black" />
+              </svg>
+            <picture>
+                <source media="(min-width:650px)" srcset="images/portrait">
+                <source media="(min-width:465px)" srcset="images/portrait">
+                <img src="images/portrait" alt="Portrait of Dante Tanjuatco" />
+              </picture> 
+            <p><strong>University of California San Diego... </strong> 
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <br/>
+
+            <h3>Skills</h3>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <aside>
+                <p><i>What I am doing and what I've done.</i></p>
+            </aside>
+            <table>
+                <colgroup>
+                    <col span="2">
+                </colgroup>
+                <caption>Work</caption>
+                <thead>
+                    <tr>
+                        <th>Where</th>
+                        <th>Role and Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Company</td>
+                        <td>
+                            Software Developer Intern - I did this and that...
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Projects</h3>
+            <details>
+                <summary>Huffman File Compressor</summary>
+                <p>
+                    Constructed a file compressor program to compress and decompress files with zero loss and savings up to 80 percent
+                </p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <nav>
+                <a>LinkedIn</a>
+                <a>Email</a>
+                <a>Github</a>
+                <a>Phone</a>
+            </nav>
+            <form>
+                <legend>Hit Me Up</legend>
+                <fieldset>
+                    <label for="firstName">First Name:
+                        <input type="text" name="firstName" id="firstName"/>
+                    </label>
+                    <label for="lastName">Last Name:
+                        <input type="text" name="lastName" id="lastName"/>
+                    </label>
+                    <label for="email">Email:
+                        <input type="text" name="email" id="email"/>
+                    </label>
+                    <label for="message">Message:</label>
+                        <textarea id="message" name="message">
+                            Shoot me a message!
+                        </textarea> 
+                    </label>
+                    <label for="findMethod">How did you find me?</label>
+                    <select name="findMethod" id="findMethod">
+                        <option value="searched">Search Engine</option>
+                        <option value="referred">Referred</option>
+                        <option value="application">Application</option>
+                        <option value="other">Other</option>
+                    </select> 
+                </fieldset>
+                <button type="submit">submit</button>
+            </form>
+        </section>
+    </main>
+    <div>
+        <h2>Experiments</h2>
+        <p>Welcome to my <span id="experiment">experiments</span></p>
+        <p><code>Using the code tag but i'd rather use CSS</code></p>
+        <pre>This is pre text so it will preserve           big        spaces</pre>
+        <p>Here is an iframe</p>
+        <iframe src="https://www.google.com/" title="Google Search"></iframe>
+        <audio controls>
+            <source src="oink.mp3" type="audio/mpeg">
+          Audio is not supported by your browser.
+        </audio> 
+        <video controls>
+            <source id='mp4' src="sample.mp4" type='video/mp4' />
+            Video is not supported by your browser.
+        </video> 
+        <p>I am going to use to canvas and script to draw a line</p>
+        <canvas id="canvas" width="300" height="300"></canvas>
+        <script>
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext("2d");
+            context.moveTo(0, 0);
+            context.lineTo(300, 300);
+            context.stroke();
+        </script>
+        <label for="favLang">Favorite Language?</label>
+        <input list="favLangs" name="favLang" id="favLang" />
+        <datalist id="favLangs">
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+        </datalist>
+        <template>
+            <h2>Random Header</h2>
+        </template>
+    </div>
+    <hr/>
+    <footer>
+        <p>Made by Dante Tanjuatco</p>
+    </footer>
+</body>
+
+</html>
