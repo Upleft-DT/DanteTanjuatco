@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+section {
+    min-height: 100vh;
+  }
+
+.container {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    height: 100vh;
+    gap: 0.3rem;
+}
+
+header {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("images/gg-bridge.jpg");
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+header > nav:first-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-me {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#more-about > ul {
+    list-style: none;
+}
+
+#portrait {
+    float: left;
+    object-fit:cover;
+    border-radius:50%;
+    shape-outside: circle(50%);
+    width: 120px;
+    height: 120px;
+}
+
+#left-side {
+    grid-column: 1 / 2;
+    text-align: center;
+    width: 640px;
+}
+
+#right-side {
+    grid-column: 3 / 4;
+    text-align: center;
+    width: 640px;
+}
+
+footer {
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
