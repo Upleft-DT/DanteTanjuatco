@@ -120,3 +120,27 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (max-width: 640px) {
+    nav:first-child {
+        visibility: visible;
+    }
+
+    nav > * + * {
+        visibility: hidden;
+    }
+
+    #left-side {
+        grid-column: 1 / 4;
+        max-height: 120px;
+    }
+
+    main {
+        grid-column: 1 / 4;
+    }
+
+    #right-side {
+        grid-column: 1 / 4;
+        max-height: 120px;
+    }
+}
