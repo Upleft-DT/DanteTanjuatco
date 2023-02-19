@@ -1,5 +1,20 @@
+:root {
+    --bg-color: #0f0e17;
+    --h-color: #fffffe;
+    --p-color: #a7a9be;
+    --button-color: #ff8906;
+    --button-text-color: #fffffe;
+  }
+  
+
 body {
-    font-family: sans-serif;
+    font-family: Verdana, sans-serif;
+    line-height: 30px;
+    background-color: var(--bg-color);
+}
+
+p {
+    color: var(--p-color);
 }
 
 strong {
@@ -13,18 +28,23 @@ td > span {
 
 h1 {
     font-size: 4rem;
+    margin: 0;
 }
 
 h2 {
     font-size: 3rem;
+    margin: 0;
+    color: var(--h-color);
 }
 
 h3 {
     font-size: 1.5rem;
+    color: var(--h-color);
 }
 
 h4 {
     font-size: 1.25rem;
+    color: var(--section-h4-color);
 }
 
 section {
@@ -33,6 +53,7 @@ section {
 
 .section-header {
     text-align: center;
+    margin: 0;
 }
 .container {
     display: grid;
@@ -73,10 +94,15 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
+    gap: 50px;
 }
+ 
+#introduction {
 
+}
 #more-about {
-    width: 20em;
+    width: 30ch;
 }
 
 #more-about > ul {
@@ -84,7 +110,7 @@ main {
 }
 
 #skills {
-    width: 20em;
+    width: 30ch;
 }
 
 #portrait {
